@@ -16,10 +16,6 @@ Simple:
 
 [![picture alt](https://sites.google.com/site/onlyuser/files/hongkong-mtr_thumb.png "hongkong-mtr")](https://sites.google.com/site/onlyuser/files/hongkong-mtr.png)
 
-With GPS coordinates for major junctions:
-
-[![picture alt](https://sites.google.com/site/onlyuser/files/hongkong-mtr_with_pos_thumb.png "hongkong-mtr_with_pos")](https://sites.google.com/site/onlyuser/files/hongkong-mtr_with_pos.png)
-
 Requirements
 ------------
 
