@@ -12,7 +12,7 @@ hongkong-mtr is a graphviz dot specification for the Taipei MTR.
 A Motivating Example
 --------------------
 
-Simple:
+Radial:
 
 [![picture alt](https://sites.google.com/site/onlyuser/files/hongkong-mtr_thumb.png "hongkong-mtr")](https://sites.google.com/site/onlyuser/files/hongkong-mtr.png)
 
