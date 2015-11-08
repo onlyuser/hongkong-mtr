@@ -1,0 +1,254 @@
+// Line                     | Code | Color        |
+// -------------------------+------+--------------+
+// Airport Express Line     | AE   | turquoise    |
+// Disneyland Resort Line   | DR   | pink         |
+// East Kowloon Line        | EK   | tan          |
+// East West Line           | EW   | brown        |
+// Island Line              | I    | blue         |
+// Kwan Tong Line           | KT   | green        |
+// Northern Line            | N    | black        |
+// North South Line         | NS   | cyan         |
+// South Island Line (East) | SIE  | yellowgreen  |
+// South Island Line (West) | SIW  | mediumpurple |
+// Tseung Kwan O Line       | TKO  | purple       |
+// Tsuen Wan Line           | TW   | red          |
+// Tung Chung Line          | TC   | orange       |
+
+graph hongkong_mtr {
+    node [shape=box, style=filled]
+    edge [penwidth=5]
+
+    // Airport Express Line
+    node [color=turquoise, fontcolor=black]
+    AE1 [label="博覽館"]
+    AE2 [label="機場"]
+    AE3_TC5 [label="青衣", shape=ellipse, color=black, fontcolor=black, fillcolor=white]
+    AE4_TC9 [label="九龍", shape=ellipse, color=black, fontcolor=black, fillcolor=white]
+    AE5_TC20 [label="香港", shape=ellipse, color=black, fontcolor=black, fillcolor=white]
+
+    edge [color=turquoise]
+    AE1 -- AE2 -- AE3_TC5 -- AE4_TC9 -- AE5_TC20
+
+    // Disney Resort Line
+    node [color=pink, fontcolor=black]
+    DR1_TC4 [label="欣澳", shape=ellipse, color=black, fontcolor=black, fillcolor=white]
+    DR2 [label="迪士尼"]
+
+    edge [color=pink]
+    DR1_TC4 -- DR2
+
+    // East Kowloon Line
+    node [color=tan, fontcolor=black]
+    EK1_EW19_KT10 [label="鑽石山"]
+    EK2 [label="彩雲"]
+    EK3 [label="順天"]
+    EK4 [label="秀茂坪"]
+    EK5 [label="寶達"]
+    EK6 [label="寶琳"]
+
+    edge [color=tan]
+    EK1_EW19_KT10 -- EK2 -- EK3 -- EK4 -- EK5 -- EK6
+
+    // East West Line
+    node [color=brown, fontcolor=black]
+    EW1 [label="屯門南"]
+    EW2 [label="屯門"]
+    EW3 [label="兆康"]
+    EW4 [label="洪水橋"]
+    EW5 [label="天水圍"]
+    EW6 [label="郎屏"]
+    EW7 [label="元郎"]
+    EW8_N2 [label="錦上路", shape=ellipse, color=black, fontcolor=black, fillcolor=white]
+    EW9 [label="荃灣西"]
+    EW10_TW6 [label="美孚", shape=ellipse, color=black, fontcolor=black, fillcolor=white]
+    EW11_TC7 [label="南昌", shape=ellipse, color=black, fontcolor=black, fillcolor=white]
+    EW12 [label="柯士甸"]
+    EW13 [label="尖東"]
+    EW14_NS3 [label="紅磡", shape=ellipse, color=black, fontcolor=black, fillcolor=white]
+    EW15 [label="柯文田"]
+    EW16 [label="馬頭圍"]
+    EW17 [label="土瓜灣"]
+    EW18 [label="啟德"]
+    EK1_EW19_KT10 [label="鑽石山"]
+    EW20_NS6 [label="大圍", shape=ellipse, color=black, fontcolor=black, fillcolor=white]
+    EW21 [label="車公廟"]
+    EW22 [label="沙田圍"]
+    EW23 [label="第一城"]
+    EW24 [label="石門"]
+    EW25 [label="大水坑"]
+    EW26 [label="恆安"]
+    EW27 [label="馬鞍山"]
+    EW28 [label="烏溪沙"]
+
+    edge [color=brown]
+    EW1 -- EW2 -- EW3 -- EW4 -- EW5 -- EW6 -- EW7 -- EW8_N2 -- EW9 -- EW10_TW6 -- EW11_TC7 -- EW12 -- EW13 -- EW14_NS3 -- EW15 -- EW16 -- EW17 -- EW18 -- EK1_EW19_KT10 -- EW20_NS6 -- EW21 -- EW22 -- EW23 -- EW24 -- EW25 -- EW26 -- EW27 -- EW28
+
+    // Island Line
+    node [color=blue, fontcolor=black]
+    I1 [label="監尼地城"]
+    I2_SIW1 [label="香港大學"]
+    I3 [label="西營盤"]
+    I4 [label="上環"]
+    I5_TW16 [label="中環", shape=ellipse, color=black, fontcolor=black, fillcolor=white]
+    I6_NS1_SIE1_TW15 [label="金鐘", shape=ellipse, color=black, fontcolor=black, fillcolor=white]
+    I7 [label="灣仔"]
+    I8 [label="銅鑼灣"]
+    I9 [label="天后"]
+    I10 [label="炮台山"]
+    I11_TKO4 [label="北角", shape=ellipse, color=black, fontcolor=black, fillcolor=white]
+    I12_TKO5 [label="鰂魚涌", shape=ellipse, color=black, fontcolor=black, fillcolor=white]
+    I13 [label="太古"]
+    I13 [label="西灣河"]
+    I14 [label="筲箕灣"]
+    I15 [label="杏花邨"]
+    I16 [label="柴灣"]
+
+    edge [color=blue]
+    I1 -- I2_SIW1 -- I3 -- I4 -- I5_TW16 -- I6_NS1_SIE1_TW15 -- I7 -- I8 -- I9 -- I10 -- I11_TKO4 -- I12_TKO5 -- I13 -- I14 -- I15 -- I16
+
+    // Kwan Tong Line
+    node [color=green, fontcolor=black]
+    KT1 [label="黃埔"]
+    KT2 [label="何文田"]
+    KT3_TW12 [label="油麻地", shape=ellipse, color=black, fontcolor=black, fillcolor=white]
+    KT4_TW11 [label="旺角", shape=ellipse, color=black, fontcolor=black, fillcolor=white]
+    KT5_TW10 [label="太子", shape=ellipse, color=black, fontcolor=black, fillcolor=white]
+    KT6 [label="石硤尾"]
+    KT7_NS5 [label="九龍塘", shape=ellipse, color=black, fontcolor=black, fillcolor=white]
+    KT8 [label="樂富"]
+    KT9 [label="黃大仙"]
+    EK1_EW19_KT10 [label="鑽石山"]
+    KT11 [label="彩虹"]
+    KT12 [label="九龍灣"]
+    KT13 [label="牛頭角"]
+    KT14 [label="觀塘"]
+    KT15 [label="藍田"]
+    KT16_TKO6 [label="油塘", shape=ellipse, color=black, fontcolor=black, fillcolor=white]
+    KT17_TKO7 [label="調景嶺"]
+
+    edge [color=green]
+    KT1 -- KT2 -- KT3_TW12 -- KT4_TW11 -- KT5_TW10 -- KT6 -- KT7_NS5 -- KT8 -- KT9 -- EK1_EW19_KT10 -- KT11 -- KT12 -- KT13 -- KT14 -- KT15 -- KT16_TKO6 -- KT17_TKO7
+
+    // Northern Line
+    node [color=black, fontcolor=white]
+    N1_NS14A [label="古洞", shape=ellipse, color=black, fontcolor=black, fillcolor=white]
+    EW8_N2 [label="錦上路", shape=ellipse, color=black, fontcolor=black, fillcolor=white]
+
+    edge [color=black]
+    N1_NS14A -- EW8_N2
+
+    // North South Line (formerly, East Rail Line)
+    node [color=cyan, fontcolor=black]
+    I6_NS1_SIE1_TW15 [label="金鐘", shape=ellipse, color=black, fontcolor=black, fillcolor=white]
+    NS2_TKO2 [label="會展"]
+    EW14_NS3 [label="紅磡", shape=ellipse, color=black, fontcolor=black, fillcolor=white]
+    NS4 [label="旺角東"]
+    KT7_NS5 [label="九龍塘", shape=ellipse, color=black, fontcolor=black, fillcolor=white]
+    EW20_NS6 [label="大圍", shape=ellipse, color=black, fontcolor=black, fillcolor=white]
+    NS7 [label="沙田"]
+    NS8A [label="火炭"]
+    NS8B [label="馬場"]
+    NS9 [label="大學"]
+    NS10 [label="大埔墟"]
+    NS11 [label="太和"]
+    NS12 [label="粉嶺"]
+    NS13 [label="上水"]
+    N1_NS14A [label="古洞", shape=ellipse, color=black, fontcolor=black, fillcolor=white]
+    N1_NS14A2 [label="落馬洲"]
+    NS14B [label="羅湖"]
+
+    edge [color=cyan]
+    I6_NS1_SIE1_TW15 -- NS2_TKO2 -- EW14_NS3 -- NS4 -- KT7_NS5 -- EW20_NS6 -- NS7 -- NS8A -- NS9 -- NS10 -- NS11 -- NS12 -- NS13 -- N1_NS14A -- N1_NS14A2
+    NS7 -- NS8B -- NS9
+    NS13 -- NS14B
+
+    // South Island Line (East)
+    node [color=yellowgreen, fontcolor=black]
+    I6_NS1_SIE1_TW15 [label="金鐘", shape=ellipse, color=black, fontcolor=black, fillcolor=white]
+    SIE2 [label="海洋公園"]
+    SIE3_SIW7 [label="黃竹坑"]
+    SIE4 [label="利東"]
+    SIE5 [label="海怡半島"]
+
+    edge [color=yellowgreen]
+    I6_NS1_SIE1_TW15 -- SIE2 -- SIE3_SIW7 -- SIE4 -- SIE5
+
+    // South Island Line (West)
+    node [color=mediumpurple, fontcolor=black]
+    I2_SIW1 [label="香港大學"]
+    SIW2 [label="瑪麗醫院"]
+    SIW3 [label="數碼港"]
+    SIW4 [label="華富"]
+    SIW5 [label="田灣"]
+    SIW6 [label="香港仔"]
+    SIE3_SIW7 [label="黃竹坑"]
+
+    edge [color=mediumpurple]
+    I2_SIW1 -- SIW2 -- SIW3 -- SIW4 -- SIW5 -- SIW6 -- SIE3_SIW7
+
+    // Tseung Kwan O Line
+    node [color=purple, fontcolor=black]
+    TC21_TKO1 [label="添馬", shape=ellipse, color=black, fontcolor=black, fillcolor=white]
+    NS2_TKO2 [label="會展"]
+    TKO3 [label="維園"]
+    I11_TKO4 [label="北角", shape=ellipse, color=black, fontcolor=black, fillcolor=white]
+    I12_TKO5 [label="鰂魚涌", shape=ellipse, color=black, fontcolor=black, fillcolor=white]
+    KT16_TKO6 [label="油塘", shape=ellipse, color=black, fontcolor=black, fillcolor=white]
+    KT17_TKO7 [label="調景嶺"]
+    TKO8 [label="將軍澳"]
+    TKO9A [label="坑口"]
+    TKO9A2 [label="寶琳"]
+    TKO9B [label="康城"]
+
+    edge [color=purple]
+    TC21_TKO1 -- NS2_TKO2 -- TKO3 -- I11_TKO4 -- I12_TKO5 -- KT16_TKO6 -- KT17_TKO7 -- TKO8 -- TKO9A -- TKO9A2
+    TKO8 -- TKO9B
+
+    // Tsuen Wan Line
+    node [color=red, fontcolor=black]
+    TW1 [label="荃灣"]
+    TW2 [label="大窩口"]
+    TW3 [label="葵芳"]
+    TW4 [label="葵興"]
+    TC6_TW5 [label="荔景", shape=ellipse, color=black, fontcolor=black, fillcolor=white]
+    EW10_TW6 [label="美孚", shape=ellipse, color=black, fontcolor=black, fillcolor=white]
+    TW7 [label="荔枝角"]
+    TW8 [label="長沙灣"]
+    TW9 [label="生水埗"]
+    KT5_TW10 [label="太子", shape=ellipse, color=black, fontcolor=black, fillcolor=white]
+    KT4_TW11 [label="旺角", shape=ellipse, color=black, fontcolor=black, fillcolor=white]
+    KT3_TW12 [label="油麻地", shape=ellipse, color=black, fontcolor=black, fillcolor=white]
+    TW13 [label="佐敦"]
+    TW14 [label="尖沙嘴"]
+    I6_NS1_SIE1_TW15 [label="金鐘", shape=ellipse, color=black, fontcolor=black, fillcolor=white]
+    I5_TW16 [label="中環", shape=ellipse, color=black, fontcolor=black, fillcolor=white]
+
+    edge [color=red]
+    TW1 -- TW2 -- TW3 -- TW4 -- TC6_TW5 -- EW10_TW6 -- TW7 -- TW8 -- TW9 -- KT5_TW10 -- KT4_TW11 -- KT3_TW12 -- TW13 -- TW14 -- I6_NS1_SIE1_TW15 -- I5_TW16
+
+    // Tung Chung Line
+    node [color=orange, fontcolor=black]
+    TC1 [label="東涌"]
+    TC2 [label="東涌"]
+    TC3 [label="東涌"]
+    DR1_TC4 [label="欣澳", shape=ellipse, color=black, fontcolor=black, fillcolor=white]
+    AE3_TC5 [label="青衣", shape=ellipse, color=black, fontcolor=black, fillcolor=white]
+    TC6_TW5 [label="荔景", shape=ellipse, color=black, fontcolor=black, fillcolor=white]
+    EW11_TC7 [label="南昌", shape=ellipse, color=black, fontcolor=black, fillcolor=white]
+    TC8 [label="奧運"]
+    AE4_TC9 [label="九龍", shape=ellipse, color=black, fontcolor=black, fillcolor=white]
+    AE5_TC20 [label="香港", shape=ellipse, color=black, fontcolor=black, fillcolor=white]
+    TC21_TKO1 [label="添馬", shape=ellipse, color=black, fontcolor=black, fillcolor=white]
+
+    edge [color=orange]
+    TC1 -- TC2 -- TC3 -- DR1_TC4 -- AE3_TC5 -- TC6_TW5 -- EW11_TC7 -- TC8 -- AE4_TC9 -- AE5_TC20 -- TC21_TKO1
+
+    // Misc
+    node [color=black, fontcolor=white]
+    NP [label="昂坪"]
+
+    edge [color=black]
+    AE5_TC20 -- I5_TW16
+    EW13 -- TW14
+    NP -- TC2
+}
