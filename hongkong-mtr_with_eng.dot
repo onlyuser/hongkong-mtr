@@ -39,7 +39,7 @@ graph hongkong_mtr {
 
     // East Kowloon Line
     node [color=tan, fontcolor=black]
-    EK1_EW19_KT10 [label="鑽石山\rDiamond Hill"]
+    EK1_EW19_KT10 [label="鑽石山\rDiamond Hill", shape=ellipse, color=black, fontcolor=black, fillcolor=white]
     EK2 [label="彩雲\rChoi Wan"]
     EK3 [label="順天\rShun Tin"]
     EK4 [label="秀茂坪\rSau Mau Ping"]
@@ -69,7 +69,7 @@ graph hongkong_mtr {
     EW16 [label="馬頭圍\rMa Tau Wai"]
     EW17 [label="土瓜灣\rTo Kwa Wan"]
     EW18 [label="啟德\rKai Tak"]
-    EK1_EW19_KT10 [label="鑽石山\rDiamond Hill"]
+    EK1_EW19_KT10 [label="鑽石山\rDiamond Hill", shape=ellipse, color=black, fontcolor=black, fillcolor=white]
     EW20_NS6 [label="大圍\rTai Wai", shape=ellipse, color=black, fontcolor=black, fillcolor=white]
     EW21 [label="車公廟\rChe Kung Temple"]
     EW22 [label="沙田圍\rSha Tin Wai"]
@@ -86,7 +86,7 @@ graph hongkong_mtr {
     // Island Line
     node [color=blue, fontcolor=black]
     I1 [label="監尼地城\rKennedy Town"]
-    I2_SIW1 [label="香港大學\rHKU"]
+    I2_SIW1 [label="香港大學\rHKU", shape=ellipse, color=black, fontcolor=black, fillcolor=white]
     I3 [label="西營盤\rSai Ying Pun"]
     I4 [label="上環\rSheung Wan"]
     I5_TW16 [label="中環\rCentral", shape=ellipse, color=black, fontcolor=black, fillcolor=white]
@@ -117,14 +117,14 @@ graph hongkong_mtr {
     KT7_NS5 [label="九龍塘\rKowloon Tong", shape=ellipse, color=black, fontcolor=black, fillcolor=white]
     KT8 [label="樂富\rLok Fu"]
     KT9 [label="黃大仙\rWong Tai Sin"]
-    EK1_EW19_KT10 [label="鑽石山\rDiamond Hill"]
+    EK1_EW19_KT10 [label="鑽石山\rDiamond Hill", shape=ellipse, color=black, fontcolor=black, fillcolor=white]
     KT11 [label="彩虹\rChoi Hung"]
     KT12 [label="九龍灣\rKowloon Bay"]
     KT13 [label="牛頭角\rNgau Tau Kok"]
     KT14 [label="觀塘\rKwun Tong"]
     KT15 [label="藍田\rLam Tin"]
     KT16_TKO6 [label="油塘\rYau Tong", shape=ellipse, color=black, fontcolor=black, fillcolor=white]
-    KT17_TKO7 [label="調景嶺\rTiu Keng Leng"]
+    KT17_TKO7 [label="調景嶺\rTiu Keng Leng", shape=ellipse, color=black, fontcolor=black, fillcolor=white]
 
     edge [color=green]
     KT1 -- KT2 -- KT3_TW12 -- KT4_TW11 -- KT5_TW10 -- KT6 -- KT7_NS5 -- KT8 -- KT9 -- EK1_EW19_KT10 -- KT11 -- KT12 -- KT13 -- KT14 -- KT15 -- KT16_TKO6 -- KT17_TKO7
@@ -140,7 +140,7 @@ graph hongkong_mtr {
     // North South Line (formerly, East Rail Line)
     node [color=cyan, fontcolor=black]
     I6_NS1_SIE1_TW15 [label="金鐘\rAdmirality", shape=ellipse, color=black, fontcolor=black, fillcolor=white]
-    NS2_TKO2 [label="會展\rExhibition"]
+    NS2_TKO2 [label="會展\rExhibition", shape=ellipse, color=black, fontcolor=black, fillcolor=white]
     EW14_NS3 [label="紅磡\rHung Hom", shape=ellipse, color=black, fontcolor=black, fillcolor=white]
     NS4 [label="旺角東\rMong Kok East"]
     KT7_NS5 [label="九龍塘\rKowloon Tong", shape=ellipse, color=black, fontcolor=black, fillcolor=white]
@@ -166,7 +166,7 @@ graph hongkong_mtr {
     node [color=yellowgreen, fontcolor=black]
     I6_NS1_SIE1_TW15 [label="金鐘\rAdmirality", shape=ellipse, color=black, fontcolor=black, fillcolor=white]
     SIE2 [label="海洋公園\rOcean Park"]
-    SIE3_SIW7 [label="黃竹坑\rWong Chuk Hang"]
+    SIE3_SIW7 [label="黃竹坑\rWong Chuk Hang", shape=ellipse, color=black, fontcolor=black, fillcolor=white]
     SIE4 [label="利東\rLei Tung"]
     SIE5 [label="海怡半島\rSouth Horizons"]
 
@@ -175,13 +175,13 @@ graph hongkong_mtr {
 
     // South Island Line (West)
     node [color=mediumpurple, fontcolor=black]
-    I2_SIW1 [label="香港大學\rHKU"]
+    I2_SIW1 [label="香港大學\rHKU", shape=ellipse, color=black, fontcolor=black, fillcolor=white]
     SIW2 [label="瑪麗醫院\rQueen Mary Hospital"]
     SIW3 [label="數碼港\rCyberport"]
     SIW4 [label="華富\rWah Fu"]
     SIW5 [label="田灣\rTin Wan"]
     SIW6 [label="香港仔\rAberdeen"]
-    SIE3_SIW7 [label="黃竹坑\rWong Chuk Hang"]
+    SIE3_SIW7 [label="黃竹坑\rWong Chuk Hang", shape=ellipse, color=black, fontcolor=black, fillcolor=white]
 
     edge [color=mediumpurple]
     I2_SIW1 -- SIW2 -- SIW3 -- SIW4 -- SIW5 -- SIW6 -- SIE3_SIW7
@@ -189,12 +189,12 @@ graph hongkong_mtr {
     // Tseung Kwan O Line
     node [color=purple, fontcolor=black]
     TC21_TKO1 [label="添馬\rTamar", shape=ellipse, color=black, fontcolor=black, fillcolor=white]
-    NS2_TKO2 [label="會展\rExhibition"]
+    NS2_TKO2 [label="會展\rExhibition", shape=ellipse, color=black, fontcolor=black, fillcolor=white]
     TKO3 [label="維園\rVictoria Park"]
     I11_TKO4 [label="北角\rNorth Point", shape=ellipse, color=black, fontcolor=black, fillcolor=white]
     I12_TKO5 [label="鰂魚涌\rQuarry Bay", shape=ellipse, color=black, fontcolor=black, fillcolor=white]
     KT16_TKO6 [label="油塘\rYau Tong", shape=ellipse, color=black, fontcolor=black, fillcolor=white]
-    KT17_TKO7 [label="調景嶺\rTiu Keng Leng"]
+    KT17_TKO7 [label="調景嶺\rTiu Keng Leng", shape=ellipse, color=black, fontcolor=black, fillcolor=white]
     TKO8 [label="將軍澳\rTseung Kwan O"]
     TKO9A [label="坑口\rHang Hau"]
     TKO9A2 [label="寶琳\rPo Lam"]

@@ -39,7 +39,7 @@ graph hongkong_mtr {
 
     // East Kowloon Line
     node [color=tan, fontcolor=black]
-    EK1_EW19_KT10 [label="鑽石山"]
+    EK1_EW19_KT10 [label="鑽石山", shape=ellipse, color=black, fontcolor=black, fillcolor=white]
     EK2 [label="彩雲"]
     EK3 [label="順天"]
     EK4 [label="秀茂坪"]
@@ -69,7 +69,7 @@ graph hongkong_mtr {
     EW16 [label="馬頭圍"]
     EW17 [label="土瓜灣"]
     EW18 [label="啟德"]
-    EK1_EW19_KT10 [label="鑽石山"]
+    EK1_EW19_KT10 [label="鑽石山", shape=ellipse, color=black, fontcolor=black, fillcolor=white]
     EW20_NS6 [label="大圍", shape=ellipse, color=black, fontcolor=black, fillcolor=white]
     EW21 [label="車公廟"]
     EW22 [label="沙田圍"]
@@ -86,7 +86,7 @@ graph hongkong_mtr {
     // Island Line
     node [color=blue, fontcolor=black]
     I1 [label="監尼地城"]
-    I2_SIW1 [label="香港大學"]
+    I2_SIW1 [label="香港大學", shape=ellipse, color=black, fontcolor=black, fillcolor=white]
     I3 [label="西營盤"]
     I4 [label="上環"]
     I5_TW16 [label="中環", shape=ellipse, color=black, fontcolor=black, fillcolor=white]
@@ -117,14 +117,14 @@ graph hongkong_mtr {
     KT7_NS5 [label="九龍塘", shape=ellipse, color=black, fontcolor=black, fillcolor=white]
     KT8 [label="樂富"]
     KT9 [label="黃大仙"]
-    EK1_EW19_KT10 [label="鑽石山"]
+    EK1_EW19_KT10 [label="鑽石山", shape=ellipse, color=black, fontcolor=black, fillcolor=white]
     KT11 [label="彩虹"]
     KT12 [label="九龍灣"]
     KT13 [label="牛頭角"]
     KT14 [label="觀塘"]
     KT15 [label="藍田"]
     KT16_TKO6 [label="油塘", shape=ellipse, color=black, fontcolor=black, fillcolor=white]
-    KT17_TKO7 [label="調景嶺"]
+    KT17_TKO7 [label="調景嶺", shape=ellipse, color=black, fontcolor=black, fillcolor=white]
 
     edge [color=green]
     KT1 -- KT2 -- KT3_TW12 -- KT4_TW11 -- KT5_TW10 -- KT6 -- KT7_NS5 -- KT8 -- KT9 -- EK1_EW19_KT10 -- KT11 -- KT12 -- KT13 -- KT14 -- KT15 -- KT16_TKO6 -- KT17_TKO7
@@ -140,7 +140,7 @@ graph hongkong_mtr {
     // North South Line (formerly, East Rail Line)
     node [color=cyan, fontcolor=black]
     I6_NS1_SIE1_TW15 [label="金鐘", shape=ellipse, color=black, fontcolor=black, fillcolor=white]
-    NS2_TKO2 [label="會展"]
+    NS2_TKO2 [label="會展", shape=ellipse, color=black, fontcolor=black, fillcolor=white]
     EW14_NS3 [label="紅磡", shape=ellipse, color=black, fontcolor=black, fillcolor=white]
     NS4 [label="旺角東"]
     KT7_NS5 [label="九龍塘", shape=ellipse, color=black, fontcolor=black, fillcolor=white]
@@ -166,7 +166,7 @@ graph hongkong_mtr {
     node [color=yellowgreen, fontcolor=black]
     I6_NS1_SIE1_TW15 [label="金鐘", shape=ellipse, color=black, fontcolor=black, fillcolor=white]
     SIE2 [label="海洋公園"]
-    SIE3_SIW7 [label="黃竹坑"]
+    SIE3_SIW7 [label="黃竹坑", shape=ellipse, color=black, fontcolor=black, fillcolor=white]
     SIE4 [label="利東"]
     SIE5 [label="海怡半島"]
 
@@ -175,13 +175,13 @@ graph hongkong_mtr {
 
     // South Island Line (West)
     node [color=mediumpurple, fontcolor=black]
-    I2_SIW1 [label="香港大學"]
+    I2_SIW1 [label="香港大學", shape=ellipse, color=black, fontcolor=black, fillcolor=white]
     SIW2 [label="瑪麗醫院"]
     SIW3 [label="數碼港"]
     SIW4 [label="華富"]
     SIW5 [label="田灣"]
     SIW6 [label="香港仔"]
-    SIE3_SIW7 [label="黃竹坑"]
+    SIE3_SIW7 [label="黃竹坑", shape=ellipse, color=black, fontcolor=black, fillcolor=white]
 
     edge [color=mediumpurple]
     I2_SIW1 -- SIW2 -- SIW3 -- SIW4 -- SIW5 -- SIW6 -- SIE3_SIW7
@@ -189,12 +189,12 @@ graph hongkong_mtr {
     // Tseung Kwan O Line
     node [color=purple, fontcolor=black]
     TC21_TKO1 [label="添馬", shape=ellipse, color=black, fontcolor=black, fillcolor=white]
-    NS2_TKO2 [label="會展"]
+    NS2_TKO2 [label="會展", shape=ellipse, color=black, fontcolor=black, fillcolor=white]
     TKO3 [label="維園"]
     I11_TKO4 [label="北角", shape=ellipse, color=black, fontcolor=black, fillcolor=white]
     I12_TKO5 [label="鰂魚涌", shape=ellipse, color=black, fontcolor=black, fillcolor=white]
     KT16_TKO6 [label="油塘", shape=ellipse, color=black, fontcolor=black, fillcolor=white]
-    KT17_TKO7 [label="調景嶺"]
+    KT17_TKO7 [label="調景嶺", shape=ellipse, color=black, fontcolor=black, fillcolor=white]
     TKO8 [label="將軍澳"]
     TKO9A [label="坑口"]
     TKO9A2 [label="寶琳"]
