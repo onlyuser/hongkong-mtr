@@ -20,19 +20,43 @@ graph hongkong_mtr {
 
     // Airport Express Line
     node [color=turquoise, fontcolor=black]
-    AE1 [label="博覽館"]
-    AE2 [label="機場"]
-    AE3_TC5 [label="青衣", shape=ellipse, color=black, fontcolor=black, fillcolor=white]
+    subgraph cluster_2 {
+        label="機場"
+        style="rounded,filled"
+
+        node [color=turquoise, fontcolor=black]
+        AE1 [label="博覽館"]
+        AE2 [label="機場"]
+    }
+    subgraph cluster_1 {
+        label="青衣"
+        style="rounded,filled"
+
+        node [color=turquoise, fontcolor=black]
+        AE3_TC5 [label="青衣", shape=ellipse, color=black, fontcolor=black, fillcolor=white]
+    }
     AE4_TC9 [label="九龍", shape=ellipse, color=black, fontcolor=black, fillcolor=white]
-    AE5_TC20 [label="香港", shape=doublecircle, color=black, fontcolor=black, fillcolor=white]
+    subgraph cluster_0 {
+        label="香港島"
+        style="rounded,filled"
+
+        node [color=turquoise, fontcolor=black]
+        AE5_TC20 [label="香港", shape=doublecircle, color=black, fontcolor=black, fillcolor=white]
+    }
 
     edge [color=turquoise]
     AE1 -- AE2 -- AE3_TC5 -- AE4_TC9 -- AE5_TC20
 
     // Disney Resort Line
     node [color=pink, fontcolor=black]
-    DR1_TC4 [label="欣澳", shape=ellipse, color=black, fontcolor=black, fillcolor=white]
-    DR2 [label="迪士尼"]
+    subgraph cluster_3 {
+        label="大嶼山"
+        style="rounded,filled"
+
+        node [color=pink, fontcolor=black]
+        DR1_TC4 [label="欣澳", shape=ellipse, color=black, fontcolor=black, fillcolor=white]
+        DR2 [label="迪士尼"]
+    }
 
     edge [color=pink]
     DR1_TC4 -- DR2
@@ -85,23 +109,29 @@ graph hongkong_mtr {
 
     // Island Line
     node [color=blue, fontcolor=black]
-    I1 [label="監尼地城"]
-    I2_SIW1 [label="香港大學", shape=ellipse, color=black, fontcolor=black, fillcolor=white]
-    I3 [label="西營盤"]
-    I4 [label="上環"]
-    I5_TW16 [label="中環", shape=doublecircle, color=black, fontcolor=black, fillcolor=white]
-    I6_NS1_SIE1_TW15 [label="金鐘", shape=ellipse, color=black, fontcolor=black, fillcolor=white]
-    I7 [label="灣仔"]
-    I8 [label="銅鑼灣"]
-    I9 [label="天后"]
-    I10 [label="炮台山"]
-    I11_TKO4 [label="北角", shape=ellipse, color=black, fontcolor=black, fillcolor=white]
-    I12_TKO5 [label="鰂魚涌", shape=ellipse, color=black, fontcolor=black, fillcolor=white]
-    I13 [label="太古"]
-    I13 [label="西灣河"]
-    I14 [label="筲箕灣"]
-    I15 [label="杏花邨"]
-    I16 [label="柴灣"]
+    subgraph cluster_0 {
+        label="香港島"
+        style="rounded,filled"
+
+        node [color=blue, fontcolor=black]
+        I1 [label="監尼地城"]
+        I2_SIW1 [label="香港大學", shape=ellipse, color=black, fontcolor=black, fillcolor=white]
+        I3 [label="西營盤"]
+        I4 [label="上環"]
+        I5_TW16 [label="中環", shape=doublecircle, color=black, fontcolor=black, fillcolor=white]
+        I6_NS1_SIE1_TW15 [label="金鐘", shape=ellipse, color=black, fontcolor=black, fillcolor=white]
+        I7 [label="灣仔"]
+        I8 [label="銅鑼灣"]
+        I9 [label="天后"]
+        I10 [label="炮台山"]
+        I11_TKO4 [label="北角", shape=ellipse, color=black, fontcolor=black, fillcolor=white]
+        I12_TKO5 [label="鰂魚涌", shape=ellipse, color=black, fontcolor=black, fillcolor=white]
+        I13 [label="太古"]
+        I13 [label="西灣河"]
+        I14 [label="筲箕灣"]
+        I15 [label="杏花邨"]
+        I16 [label="柴灣"]
+    }
 
     edge [color=blue]
     I1 -- I2_SIW1 -- I3 -- I4 -- I5_TW16 -- I6_NS1_SIE1_TW15 -- I7 -- I8 -- I9 -- I10 -- I11_TKO4 -- I12_TKO5 -- I13 -- I14 -- I15 -- I16
@@ -140,7 +170,13 @@ graph hongkong_mtr {
     // North South Line (formerly, East Rail Line)
     node [color=cyan, fontcolor=black]
     I6_NS1_SIE1_TW15 [label="金鐘", shape=ellipse, color=black, fontcolor=black, fillcolor=white]
-    NS2_TKO2 [label="會展", shape=ellipse, color=black, fontcolor=black, fillcolor=white]
+    subgraph cluster_0 {
+        label="香港島"
+        style="rounded,filled"
+
+        node [color=cyan, fontcolor=black]
+        NS2_TKO2 [label="會展", shape=ellipse, color=black, fontcolor=black, fillcolor=white]
+    }
     EW14_NS3 [label="紅磡", shape=ellipse, color=black, fontcolor=black, fillcolor=white]
     NS4 [label="旺角東"]
     KT7_NS5 [label="九龍塘", shape=ellipse, color=black, fontcolor=black, fillcolor=white]
@@ -164,34 +200,58 @@ graph hongkong_mtr {
 
     // South Island Line (East)
     node [color=yellowgreen, fontcolor=black]
-    I6_NS1_SIE1_TW15 [label="金鐘", shape=ellipse, color=black, fontcolor=black, fillcolor=white]
-    SIE2 [label="海洋公園"]
-    SIE3_SIW7 [label="黃竹坑", shape=ellipse, color=black, fontcolor=black, fillcolor=white]
-    SIE4 [label="利東"]
-    SIE5 [label="海怡半島"]
+    subgraph cluster_0 {
+        label="香港島"
+        style="rounded,filled"
+
+        node [color=yellowgreen, fontcolor=black]
+        I6_NS1_SIE1_TW15 [label="金鐘", shape=ellipse, color=black, fontcolor=black, fillcolor=white]
+        SIE2 [label="海洋公園"]
+        SIE3_SIW7 [label="黃竹坑", shape=ellipse, color=black, fontcolor=black, fillcolor=white]
+    }
+    subgraph cluster_4 {
+        label="海怡半島"
+        style="rounded,filled"
+
+        node [color=yellowgreen, fontcolor=black]
+        SIE4 [label="利東"]
+        SIE5 [label="海怡半島"]
+    }
 
     edge [color=yellowgreen]
     I6_NS1_SIE1_TW15 -- SIE2 -- SIE3_SIW7 -- SIE4 -- SIE5
 
     // South Island Line (West)
     node [color=mediumpurple, fontcolor=black]
-    I2_SIW1 [label="香港大學", shape=ellipse, color=black, fontcolor=black, fillcolor=white]
-    SIW2 [label="瑪麗醫院"]
-    SIW3 [label="數碼港"]
-    SIW4 [label="華富"]
-    SIW5 [label="田灣"]
-    SIW6 [label="香港仔"]
-    SIE3_SIW7 [label="黃竹坑", shape=ellipse, color=black, fontcolor=black, fillcolor=white]
+    subgraph cluster_0 {
+        label="香港島"
+        style="rounded,filled"
+
+        node [color=mediumpurple, fontcolor=black]
+        I2_SIW1 [label="香港大學", shape=ellipse, color=black, fontcolor=black, fillcolor=white]
+        SIW2 [label="瑪麗醫院"]
+        SIW3 [label="數碼港"]
+        SIW4 [label="華富"]
+        SIW5 [label="田灣"]
+        SIW6 [label="香港仔"]
+        SIE3_SIW7 [label="黃竹坑", shape=ellipse, color=black, fontcolor=black, fillcolor=white]
+    }
 
     edge [color=mediumpurple]
     I2_SIW1 -- SIW2 -- SIW3 -- SIW4 -- SIW5 -- SIW6 -- SIE3_SIW7
 
     // Tseung Kwan O Line
     node [color=purple, fontcolor=black]
-    TC21_TKO1 [label="添馬", shape=ellipse, color=black, fontcolor=black, fillcolor=white]
-    NS2_TKO2 [label="會展", shape=ellipse, color=black, fontcolor=black, fillcolor=white]
-    TKO3 [label="維園"]
-    I11_TKO4 [label="北角", shape=ellipse, color=black, fontcolor=black, fillcolor=white]
+    subgraph cluster_0 {
+        label="香港島"
+        style="rounded,filled"
+
+        node [color=purple, fontcolor=black]
+        TC21_TKO1 [label="添馬", shape=ellipse, color=black, fontcolor=black, fillcolor=white]
+        NS2_TKO2 [label="會展", shape=ellipse, color=black, fontcolor=black, fillcolor=white]
+        TKO3 [label="維園"]
+        I11_TKO4 [label="北角", shape=ellipse, color=black, fontcolor=black, fillcolor=white]
+    }
     I12_TKO5 [label="鰂魚涌", shape=ellipse, color=black, fontcolor=black, fillcolor=white]
     KT16_TKO6 [label="油塘", shape=ellipse, color=black, fontcolor=black, fillcolor=white]
     KT17_TKO7 [label="調景嶺", shape=ellipse, color=black, fontcolor=black, fillcolor=white]
@@ -228,24 +288,48 @@ graph hongkong_mtr {
 
     // Tung Chung Line
     node [color=orange, fontcolor=black]
-    TC1 [label="東涌"]
-    TC2 [label="東涌", shape=ellipse, color=black, fontcolor=black, fillcolor=white]
-    TC3 [label="東涌"]
-    DR1_TC4 [label="欣澳", shape=ellipse, color=black, fontcolor=black, fillcolor=white]
-    AE3_TC5 [label="青衣", shape=ellipse, color=black, fontcolor=black, fillcolor=white]
+    subgraph cluster_3 {
+        label="大嶼山"
+        style="rounded,filled"
+
+        node [color=orange, fontcolor=black]
+        TC1 [label="東涌"]
+        TC2 [label="東涌", shape=ellipse, color=black, fontcolor=black, fillcolor=white]
+        TC3 [label="東涌"]
+        DR1_TC4 [label="欣澳", shape=ellipse, color=black, fontcolor=black, fillcolor=white]
+    }
+    subgraph cluster_1 {
+        label="青衣"
+        style="rounded,filled"
+
+        node [color=orange, fontcolor=black]
+        AE3_TC5 [label="青衣", shape=ellipse, color=black, fontcolor=black, fillcolor=white]
+    }
     TC6_TW5 [label="荔景", shape=ellipse, color=black, fontcolor=black, fillcolor=white]
     EW11_TC7 [label="南昌", shape=ellipse, color=black, fontcolor=black, fillcolor=white]
     TC8 [label="奧運"]
     AE4_TC9 [label="九龍", shape=ellipse, color=black, fontcolor=black, fillcolor=white]
-    AE5_TC20 [label="香港", shape=doublecircle, color=black, fontcolor=black, fillcolor=white]
-    TC21_TKO1 [label="添馬", shape=ellipse, color=black, fontcolor=black, fillcolor=white]
+    subgraph cluster_0 {
+        label="香港島"
+        style="rounded,filled"
+
+        node [color=orange, fontcolor=black]
+        AE5_TC20 [label="香港", shape=doublecircle, color=black, fontcolor=black, fillcolor=white]
+        TC21_TKO1 [label="添馬", shape=ellipse, color=black, fontcolor=black, fillcolor=white]
+    }
 
     edge [color=orange]
     TC1 -- TC2 -- TC3 -- DR1_TC4 -- AE3_TC5 -- TC6_TW5 -- EW11_TC7 -- TC8 -- AE4_TC9 -- AE5_TC20 -- TC21_TKO1
 
     // Misc
     node [color=black, fontcolor=white]
-    NP [label="昂坪"]
+    subgraph cluster_3 {
+        label="大嶼山"
+        style="rounded,filled"
+
+        node [color=black, fontcolor=white]
+        NP [label="昂坪"]
+    }
 
     edge [color=black]
     AE5_TC20 -- I5_TW16
