@@ -1,5 +1,5 @@
 hongkong-mtr
-==========
+============
 
 Copyright (C) 2011-2015 Jerry Chen <mailto:onlyuser@gmail.com>
 
@@ -42,8 +42,8 @@ References
 ----------
 
 <dl>
-    <dt>"hongkong-metro-stations"</dt>
-    <dd>https://github.com/repeat/hongkong-metro-stations</dd>
+    <dt>"MTR"</dt>
+    <dd>https://en.wikipedia.org/wiki/MTR</dd>
 </dl>
 
 Keywords
