@@ -74,7 +74,7 @@ graph hongkong_mtr {
     EK1_EW19_KT10 -- EK2 -- EK3 -- EK4 -- EK5 -- EK6
 
     // East West Line
-    node [color=brown, fontcolor=black]
+    node [color=brown, fontcolor=white]
     EW1 [label="屯門南\rTuen Men South"]
     EW2 [label="屯門\rTuen Men"]
     EW3 [label="兆康\rSiu Hong"]
@@ -108,12 +108,12 @@ graph hongkong_mtr {
     EW1 -- EW2 -- EW3 -- EW4 -- EW5 -- EW6 -- EW7 -- EW8_N2 -- EW9 -- EW10_TW6 -- EW11_TC7 -- EW12 -- EW13 -- EW14_NS3 -- EW15 -- EW16 -- EW17 -- EW18 -- EK1_EW19_KT10 -- EW20_NS6 -- EW21 -- EW22 -- EW23 -- EW24 -- EW25 -- EW26 -- EW27 -- EW28
 
     // Island Line
-    node [color=blue, fontcolor=black]
+    node [color=blue, fontcolor=white]
     subgraph cluster_0 {
         label="香港島"
         style="rounded,filled"
 
-        node [color=blue, fontcolor=black]
+        node [color=blue, fontcolor=white]
         I1 [label="監尼地城\rKennedy Town"]
         I2_SIW1 [label="香港大學\rHKU", shape=ellipse, color=black, fontcolor=black, fillcolor=white]
         I3 [label="西營盤\rSai Ying Pun"]
@@ -241,12 +241,12 @@ graph hongkong_mtr {
     I2_SIW1 -- SIW2 -- SIW3 -- SIW4 -- SIW5 -- SIW6 -- SIE3_SIW7
 
     // Tseung Kwan O Line
-    node [color=purple, fontcolor=black]
+    node [color=purple, fontcolor=white]
     subgraph cluster_0 {
         label="香港島"
         style="rounded,filled"
 
-        node [color=purple, fontcolor=black]
+        node [color=purple, fontcolor=white]
         TC21_TKO1 [label="添馬\rTamar", shape=ellipse, color=black, fontcolor=black, fillcolor=white]
         NS2_TKO2 [label="會展\rExhibition", shape=ellipse, color=black, fontcolor=black, fillcolor=white]
         TKO3 [label="維園\rVictoria Park"]
@@ -265,7 +265,7 @@ graph hongkong_mtr {
     TKO8 -- TKO9B
 
     // Tsuen Wan Line
-    node [color=red, fontcolor=black]
+    node [color=red, fontcolor=white]
     TW1 [label="荃灣\rTsuen Wan"]
     TW2 [label="大窩口\rTai Wo Hau"]
     TW3 [label="葵芳\rKwai Hing"]
