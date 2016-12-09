@@ -14,11 +14,11 @@ A Motivating Example
 
 Radial:
 
-[![picture alt](https://sites.google.com/site/onlyuser/files/hongkong-mtr_thumb.png "hongkong-mtr")](https://sites.google.com/site/onlyuser/files/hongkong-mtr.png)
+[![picture alt](https://sites.google.com/site/onlyuser/files/hongkong-mtr_thumb.png?attredirects=0 "hongkong-mtr")](https://sites.google.com/site/onlyuser/files/hongkong-mtr.png?attredirects=0)
 
 Tree layout:
 
-[![picture alt](https://sites.google.com/site/onlyuser/files/hongkong-mtr_tree_layout_thumb.png "hongkong-mtr")](https://sites.google.com/site/onlyuser/files/hongkong-mtr_tree_layout.png)
+[![picture alt](https://sites.google.com/site/onlyuser/files/hongkong-mtr_tree_layout_thumb.png?attredirects=0 "hongkong-mtr")](https://sites.google.com/site/onlyuser/files/hongkong-mtr_tree_layout.png?attredirects=0)
 
 Requirements
 ------------
