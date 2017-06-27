@@ -23,7 +23,7 @@ Tree layout:
 Requirements
 ------------
 
-* graphviz dot
+    graphviz
 
 Installation (Debian)
 ---------------------
